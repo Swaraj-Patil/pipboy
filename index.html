@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>PipBoy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/pipboy.app.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light first-navbar">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-SupportedContent" aria-expanded="false" aria-label="Toggle-navigation"></button>
+      <div class="collapse navbar-collapse" id="navbarSupportContent mainNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">STAT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="inv.html">INV</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="data.html">DATA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="map.html">MAP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="radio.html">RADIO</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a href="#status" class="nav-link" data-toggle="tab">
+                STATUS
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#special" class="nav-link" data-toggle="tab">
+                SPECIAL
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#perks" class="nav-link" data-toggle="tab">
+                PERKS
+              </a>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="status" role="tabpanel">
+              <div class="center-image">
+                <img src="vaultBoy.png">
+              </div>
+
+              <div class="stat-bar-container">
+              <div class="row">
+                <div class="col-12">
+                  <div class="stat-bar">
+                    <div class="level-progress">
+                      <div class="level-progress-indicator w10"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-3">
+                  <div class="stat-bar">
+                    <div class="level-progress">
+                      <div class="level-progress-indicator w70"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6"></div>
+                <div class="col-3">
+                  <div class="stat-bar">
+                    <div class="level-progress">
+                      <div class="level-progress-indicator w40"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-3">
+                  <div class="stat-bar">
+                    <div class="level-progress">
+                      <div class="level-progress-indicator w30"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6"></div>
+                <div class="col-3">
+                  <div class="stat-bar">
+                    <div class="level-progress">
+                      <div class="level-progress-indicator w20"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="stat-bar">
+                    <div class="level-progress">
+                      <div class="level-progress-indicator w50"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row stat-numbers">
+              <div class="spacer-numbers"></div>
+              <div class="col-2">
+                <img src="gun.png" class="img-responsive">
+              </div>
+              <div class="col-1">
+                <div class="icon">
+                  <img src="crosshair.png" class="img-responsive">
+                </div>
+                <div class="points-crosshair">
+                  18
+                </div>
+              </div>
+              <div class="col-1 transparent"></div>
+              <div class="col-2">
+                <img src="helmet.png" class="img-responsive helmet">
+              </div>
+              <div class="col-1">
+                <div class="icon">
+                  <img src="flash.png" class="img-responsive">
+                </div>
+                <div class="points-flash">
+                  5
+                </div>
+              </div>
+              <div class="col-1">
+                <div class="icon">
+                  <img src="radiation.png" class="img-responsive radiation">
+                </div>
+                <div class="points-radiation">
+                  10
+                </div>
+              </div>
+                <div class="col-2 transparent"></div>
+              </div>
+              <div class="username">
+                <span>BUNNY</span>
+              </div>
+            </div>
+
+            <div class="tab-pane fade show" id="special" role="tabpanel">
+              Special inside
+            </div>
+
+            <div class="tab-pane fade show" id="perks" role="tabpanel">
+              Perks inside
+            </div>
+          </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <navbar class="navbar-light pip-footer">
+      <div class="row">
+        <div class="col-3">
+          HP 90/100
+        </div>
+        <div class="col-6 text-center">
+          <span>LEVEL 1</span>
+          <div class="level-progress">
+            <div class="level-progress-indicator"></div>
+          </div>
+        </div>
+        <div class="col-3 text-right">
+          AP 70/70
+        </div>
+      </div>
+    </navbar>
+
+    <script src="js/jquery-2.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/pipboy.app.js"></script>
+  </body>
+</html>

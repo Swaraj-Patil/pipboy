@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>PipBoy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/pipboy.app.css">
+  </head>
+  <body onload="realtimeClock()">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light first-navbar">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-SupportedContent" aria-expanded="false" aria-label="Toggle-navigation"></button>
+      <div class="collapse navbar-collapse" id="navbarSupportContent mainNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">STAT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="inv.html">INV</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="data.html">DATA</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="map.html">MAP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="radio.html">RADIO</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="map-container">
+      <img class="map-image  image-responsive" src="map3.png">
+    </div>
+    <img class="map-cursor" src="map cursor.png">
+    
+    <navbar class="navbar-light pip-footer pip-footer-map">
+      <div class="row">
+        <div class="col-3">
+          <div id="my_date"></div>
+        </div>
+        <div class="col-3 text-left">
+          <div class="clock-container">
+            <div id="clock"></div>
+          </div>
+        </div>
+        <div class="col-6 text-right">
+          <span>LOCAL MAP</span>
+        </div>
+      </div>
+    </navbar>
+
+    <script src="js/jquery-2.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/map.js"></script>
+  </body>
+</html>
